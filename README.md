@@ -1,5 +1,7 @@
 # Welcome to Easy Trivia
 # Author: James Campbell
+# Disclaimer:
+# This project was made back in 2021, I recently added it to my new repository as I deleted my old one.
 # Based on a trivia question generator api called:
 # Open Trivia Database
 # Source: https://opentdb.com/
