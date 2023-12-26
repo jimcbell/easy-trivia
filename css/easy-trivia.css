@@ -1,0 +1,139 @@
+
+body >div{
+  margin: 30px 0;
+}
+.save-answer{
+  cursor: pointer !important;
+  width: 100%;
+}
+.saved{
+  background-color: yellow;
+  font-size: 20px;
+}
+.navbar span{
+  font-size: 60px;
+}
+.back-btn{
+  height: 60px;
+}
+.centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-checkbox input{
+  margin:20px;
+  -webkit-transform: scale(3,3);
+
+}
+.back-btn{
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+label, .back-btn > span {
+  font-size: 25px;
+}
+input[type=number]{
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+#question-list span{
+  font-size: 20px;
+}
+#question-list > div > div{
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+#question-list > div:last-child > div:last-child{
+  border-bottom: none;
+}
+.hint-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+.hint-list span{
+  font-weight: bold;
+}
+.answer, .shown-answer{
+  font-weight: bold;
+  color: #007bff!important;
+}
+.answer::before, .shown-answer::before{
+  content: "A: ";
+  color: black;
+  font-size: 20px;
+}
+.question::before{
+  content: "Q: ";
+  font-size: 20px;
+}
+@media only screen and (max-device-width: 480px) {
+  label{
+    font-size: 40px;
+  }
+  input[type=number]{
+    height: 70px;
+    font-size: 30px;
+  }
+  input[type=checkbox]{
+    height: 70px;
+  }
+  .btn{
+    height:90px;
+    font-size: 30px !important;
+  }
+  #question-list{
+    padding: 0;
+  }
+  #question-list span{
+    font-size: 32px;
+  }
+  .answer::before, .shown-answer::before{
+    font-size: 32px;
+  }
+  .question::before{
+    font-size: 32px;
+  }
+  #question-list > div:last-child > div:last-child{
+    border-bottom: none;
+  }
+  .hint-list .hint{
+    padding: 15px;
+  }
+  .hint-list .hint span{
+    font-size: 26px !important;
+  }
+}
+ div.main-title span{
+    font-size: 45px;
+ }
+  div#question-list{
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  div.add-border{
+    border: 2px solid black;
+  }
+
+  div .reveal-button{
+    cursor: pointer;
+    background-color: #28a745;
+  }
+  div .reveal-button:hover{
+    background-color: red;
+  }
+  .hiddenAnswer{
+    display: none;
+  }
+  .hiddenReveal{
+    display: none;
+  }
+
+  .tabulator-row .tabulator-cell{
+    padding:8px 4px;
+}

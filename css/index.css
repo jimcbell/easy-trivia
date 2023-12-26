@@ -1,0 +1,18 @@
+.index-content > div .row{
+    padding: 25px 0;
+}
+@media only screen and (max-device-width: 480px) {
+    .index-container div .row{
+        padding: 86px;
+    }
+    a{
+        height: 200px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px !important;
+    }
+    a span{
+        font-size: 50px;
+    }
+}

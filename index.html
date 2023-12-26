@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Easy Trivia</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/index.css?v=3" rel="stylesheet"/>
+    </head>
+    <body onload="checkUsername()" class="bg-light">
+        <div class="index-container">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-sm-12">
+                        <div class="text-center display-1">
+                            <span class="text-primary">Easy Trivia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index-content">
+                <div class="container-fluid bg-light">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
+                            <div class="text-center text-dark h1">
+                                Easy trivia is a quick way of generating random trivia questions
+                            </div>
+                        </div>
+                    </div>
+                    <div id="username-input" class="row">
+                            <input id="username" class= "col-lg-2 offset-lg-5 col-sm-6 offset-sm-3 text-center" type="text" placeholder="Enter Username">
+                    </div>
+                    <div class="row">
+                        <a class="btn btn-success col-lg-2 offset-lg-5 col-sm-6 offset-sm-3 text-light text-center" id="enter" onclick="storeUsername()">
+                            <span>Enter</span>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1">
+                            <div class="text-center text-dark h1">
+                                This site utilizes the Open Trivia Database API, to get the trivia questions. These Trivia questions were 
+                                not created by Easy Trivia, check out the Database and API here: <a href="https://opentdb.com/">Open Trivia Database</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/site.js?v=3"></script>
+    </body>
+    <footer class="bg-light"></footer>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Easy Trivia Main</title>
+        <link href="css/easy-trivia.css?v=3" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body onload="pageLoad()">
+        <div class="navbar bg-dark opacity-filter">
+            <div class="navbar-brand mx-auto">
+                <span class="text-primary">Easy Trivia Questions</span>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 opacity-filter centered back-btn btn-danger" onclick="indexPage()">
+                    <span>Home</span>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 opacity-filter centered back-btn btn-primary" onclick="myTriviaPage()">
+                <span>My Trivia Questions</span>
+            </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3 col-sm-10 offset-sm-1 opacity-filter">
+            <div class="card card-body bg-light">
+                <div class="form-group text-center">
+                    <label>Number of Questions:</label>
+                    <input class="form-control col-6 offset-3" id="num-questions" type="number" value="10"/>
+                </div>
+                <div class="checkable centered text-center checker">
+                    <label>Hide Answers</label>
+                    <div class="my-checkbox"><input id="hidden-answers" type="checkbox"/></div>
+                </div>
+                <div class="checkable text-center ">
+                    <label>Show Hints</label>
+                    <div class="my-checkbox"><input id="hints" type="checkbox"/></div>
+                </div>
+                <!-- <div class="form-group text-center ">
+                    <label>Category</label>
+                    <input class="form-control col-6 offset-3"/>
+                </div> -->
+            </div>
+        </div>
+        <button class="col-6 offset-3 btn btn-success" onclick="clicked()">Generate Questions</button>
+        <div class="col-lg-8 offset-lg-2"><div id="question-list"></div></div>
+        <script src="js/site.js?v=3"></script>
+    </body>
+</html>

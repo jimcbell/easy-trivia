@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>My Trivia</title>
+        <link href="css/easy-trivia.css?v=3" rel="stylesheet"/>
+        <link href="css/my-trivia.css?v=3" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/tabulator.min.css" rel="stylesheet">
+    </head>
+    <body onload="onLoadMyTrivia()">
+        <div class="navbar bg-dark opacity-filter">
+            <div class="navbar-brand mx-auto">
+                <span class="text-primary">My Trivia Questions</span>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 opacity-filter centered back-btn btn-danger" onclick="indexPage()">
+                    <span>Home</span>
+            </div>
+            <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3 opacity-filter centered back-btn btn-primary" onclick="easyTriviaPage()">
+                <span>Easy Trivia</span>
+            </div>
+        </div>
+        
+        <div class="col-10 offset-1 opacity-filter">
+            <div id="example-table"></div>
+            <div class="card card-body bg-light">
+                <span>Questions and Answers</span>
+            </div>
+            <div id = "display-area">
+            </div>
+        </div>
+        <div class="col-lg-8 offset-lg-2"><div id="question-list"></div></div>
+        <script src="js/my-trivia.js?v=3"></script>
+        <script type="text/javascript" src="js/tabulator.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+#display-area{
+    display: flex;
+    flex-direction: row;
+}
+.questions, .answers{
+    display: flex;
+    flex-direction: column;
+}
+
+.questions{
+    flex: 1;
+}
+
+.questions span{
+    margin: 10px 0;
+}
+.answers span{
+    margin: 10px 0;
+}
